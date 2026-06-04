@@ -12,9 +12,10 @@ This roadmap is intentionally practical. The goal is to turn the landing-page MV
 
 ## Phase 2: Lead Capture
 
-- Add a landing-page lead form.
-- Add `POST /api/leads`.
-- Store leads in a database or external table.
+- Add a landing-page lead form. Done in MVP.
+- Add `POST /api/leads`. Done in MVP.
+- Store leads in local JSONL for development. Done in MVP.
+- Add PostgreSQL or CRM-backed storage.
 - Add basic analytics events for CTA clicks and submissions.
 
 ## Phase 3: Data Model

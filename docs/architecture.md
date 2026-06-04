@@ -30,6 +30,7 @@ flowchart LR
 ## Components
 
 - Landing: public website that explains the product and collects leads.
+- Lead Capture API: validates landing-page submissions and stores normalized lead records.
 - Admin Dashboard: business settings, services, knowledge base, conversations, and bookings.
 - Webhook API: validates and normalizes incoming messages from Telegram and WhatsApp.
 - AI Orchestrator: builds the prompt, calls approved tools, and applies safety rules.

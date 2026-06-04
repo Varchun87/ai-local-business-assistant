@@ -15,13 +15,14 @@ Many local businesses lose leads because messages arrive after hours or administ
 MVP repository. Implemented today:
 
 - Next.js landing page.
+- Lead capture form and `POST /api/leads` route.
 - Product and technical MVP plan.
 - Safety-first OSS documentation.
 - Basic security policy.
 
 Planned next:
 
-- Backend API for leads and messenger webhooks.
+- Messenger webhook APIs.
 - PostgreSQL/Prisma data model.
 - Telegram Bot API integration.
 - Google Calendar availability checks.
@@ -51,6 +52,7 @@ Planned next:
 - React and TypeScript.
 - Tailwind CSS.
 - Planned: PostgreSQL, Prisma, Redis/queue, OpenAI-compatible AI tools, Telegram, WhatsApp Business Cloud API, Google Calendar.
+- Current lead storage: local JSONL adapter for MVP development.
 
 ## Getting Started
 
@@ -60,6 +62,8 @@ npm run dev
 ```
 
 Open `http://localhost:3000`.
+
+Lead submissions are stored locally in `.data/leads.jsonl` by default. This file is ignored by git. Override the path with `LEADS_FILE_PATH` if needed.
 
 ## Verification
 
@@ -71,9 +75,14 @@ npm audit --omit=dev
 ## Repository Structure
 
 - `app/page.tsx` - landing page.
+- `app/api/leads/route.ts` - lead capture API route.
 - `components/Hero.tsx` - main hero section.
+- `components/LeadForm.tsx` - landing-page lead form.
+- `lib/leads.ts` - lead validation and record creation.
+- `lib/lead-store.ts` - local JSONL lead storage adapter.
 - `docs/MVP-plan.md` - product and technical MVP plan in Russian.
 - `docs/architecture.md` - high-level system architecture.
+- `docs/lead-capture.md` - lead capture implementation notes.
 - `docs/roadmap.md` - open-source roadmap.
 - `docs/safety.md` - safety and healthcare-adjacent boundaries.
 - `docs/codex-for-oss-application.md` - Codex for OSS application draft.

@@ -1,4 +1,5 @@
 import { Hero } from "@/components/Hero";
+import { LeadForm } from "@/components/LeadForm";
 
 const features = [
   "Отвечает на типовые вопросы строго по прайсу",
@@ -74,12 +75,7 @@ export default function Home() {
           <p className="mx-auto mt-4 max-w-2xl text-slate-400">
             Подключим один канал, загрузим прайс и проверим, сколько заявок ассистент сможет обработать без администратора.
           </p>
-          <a
-            href="mailto:hello@example.com?subject=Тест ИИ-администратора"
-            className="mt-8 inline-flex rounded-xl bg-emerald-500 px-8 py-4 font-medium text-slate-950 transition-colors hover:bg-emerald-400"
-          >
-            Оставить заявку
-          </a>
+          <LeadForm />
         </div>
       </section>
     </main>
