@@ -1,4 +1,95 @@
-# AI-Ассистент для локального бизнеса
+# AI Local Business Assistant
+
+Open-source MVP for a safety-first AI administrator for local businesses: client booking, FAQ automation, lead triage, Telegram/WhatsApp messaging, and CRM/calendar integrations.
+
+The project focuses on small businesses and sensitive support scenarios where a fast, calm, and careful first response matters: clinics, patient support services, local service providers, and applications for anxious users.
+
+Important: this project is not intended to provide medical diagnosis, medical advice, or replace a doctor. In healthcare-related scenarios, the assistant must stay administrative: booking, routing, FAQ, reminders, and human escalation.
+
+## Why This Exists
+
+Many local businesses lose leads because messages arrive after hours or administrators are overloaded. The goal of this project is to provide an open, inspectable, and safety-first template for AI-assisted communication that can be adapted by small teams without building everything from scratch.
+
+## Current Status
+
+MVP repository. Implemented today:
+
+- Next.js landing page.
+- Product and technical MVP plan.
+- Safety-first OSS documentation.
+- Basic security policy.
+
+Planned next:
+
+- Backend API for leads and messenger webhooks.
+- PostgreSQL/Prisma data model.
+- Telegram Bot API integration.
+- Google Calendar availability checks.
+- AI orchestration with tool calls and human handoff.
+- Test coverage and CI hardening.
+
+## Use Cases
+
+- Beauty salons and barbershops: booking, pricing, reminders.
+- Auto repair and tire services: service triage, appointment scheduling.
+- Private professionals: FAQ, qualification, calendar booking.
+- Clinics and support teams: administrative routing, non-diagnostic FAQ, human escalation.
+- Anxious users: calm responses, clear next steps, escalation when needed.
+
+## Safety Principles
+
+- No invented prices, services, slots, or policies.
+- No medical diagnosis or treatment recommendations.
+- Human handoff for risky, unclear, emotional, legal, or medical situations.
+- Use structured business knowledge instead of free-form guessing.
+- Log assistant actions that affect customers: bookings, discounts, handoffs.
+- Store minimal personal data and protect integration tokens.
+
+## Tech Stack
+
+- Next.js App Router.
+- React and TypeScript.
+- Tailwind CSS.
+- Planned: PostgreSQL, Prisma, Redis/queue, OpenAI-compatible AI tools, Telegram, WhatsApp Business Cloud API, Google Calendar.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+## Verification
+
+```bash
+npm run build
+npm audit --omit=dev
+```
+
+## Repository Structure
+
+- `app/page.tsx` - landing page.
+- `components/Hero.tsx` - main hero section.
+- `docs/MVP-plan.md` - product and technical MVP plan in Russian.
+- `docs/architecture.md` - high-level system architecture.
+- `docs/roadmap.md` - open-source roadmap.
+- `docs/safety.md` - safety and healthcare-adjacent boundaries.
+- `docs/codex-for-oss-application.md` - Codex for OSS application draft.
+
+## Contributing
+
+Contributions are welcome. See `CONTRIBUTING.md`.
+
+Priority areas:
+
+- Safer AI assistant workflows.
+- Telegram/WhatsApp/CRM/calendar integrations.
+- Test coverage and CI.
+- Documentation for healthcare-adjacent administrative use cases.
+
+## Русская Версия
 
 Open-source MVP автономного ИИ-администратора, который помогает локальному бизнесу обрабатывать заявки в Telegram и WhatsApp, отвечать по базе знаний и записывать клиентов в календарь или CRM.
 
@@ -6,42 +97,6 @@ Open-source MVP автономного ИИ-администратора, кот
 
 Важно: проект не предназначен для постановки диагнозов, медицинских рекомендаций или замены врача. В медицинских сценариях ассистент должен выполнять только административные функции: запись, FAQ, маршрутизация и передача диалога человеку.
 
-## Статус
+## License
 
-MVP-репозиторий. Сейчас реализован лендинг и подготовлена техническая документация. Следующий этап - backend, база данных, Telegram/WhatsApp webhooks и календарные интеграции.
-
-## Запуск
-
-```bash
-npm install
-npm run dev
-```
-
-Откройте `http://localhost:3000`.
-
-## Структура
-
-- `app/page.tsx` - главная страница лендинга.
-- `components/Hero.tsx` - основной Hero-блок.
-- `docs/MVP-plan.md` - продуктовый и технический план MVP.
-- `docs/codex-for-oss-application.md` - черновик заявки в Codex for OSS.
-
-## OSS roadmap
-
-- Добавить API-роуты для лидов и webhooks.
-- Добавить PostgreSQL/Prisma схему.
-- Реализовать AI orchestrator с безопасными tool-вызовами.
-- Подключить Telegram Bot API.
-- Подключить Google Calendar для проверки свободных слотов.
-- Подготовить безопасные шаблоны для медицинских и тревожно-чувствительных сценариев.
-- Добавить тесты, CI и security checks.
-
-## Следующие шаги
-
-- Заменить `hello@example.com` на рабочий контакт.
-- Добавить форму заявки и API-роут для сохранения лидов.
-- Подключить аналитику: события кликов, заявки, конверсия.
-
-## Лицензия
-
-MIT. См. `LICENSE`.
+MIT. See `LICENSE`.
