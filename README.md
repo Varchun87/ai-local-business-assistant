@@ -81,6 +81,7 @@ npm audit --omit=dev
 - `lib/leads.ts` - lead validation and record creation.
 - `lib/lead-store.ts` - local JSONL lead storage adapter.
 - `docs/MVP-plan.md` - product and technical MVP plan in Russian.
+- `docs/MVP-plan.en.md` - English version of the MVP plan.
 - `docs/architecture.md` - high-level system architecture.
 - `docs/lead-capture.md` - lead capture implementation notes.
 - `docs/roadmap.md` - open-source roadmap.

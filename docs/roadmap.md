@@ -7,6 +7,7 @@ This roadmap is intentionally practical. The goal is to turn the landing-page MV
 - Public repository with MIT license.
 - Bilingual README.
 - Architecture, roadmap, safety, and MVP documentation.
+- English MVP plan translation.
 - GitHub Actions CI for build and audit.
 - Issue templates for bugs and feature requests.
 
@@ -74,6 +75,5 @@ This roadmap is intentionally practical. The goal is to turn the landing-page MV
 
 - Add a real contact form component.
 - Add demo JSON data for services and FAQ.
-- Add English translations for `docs/MVP-plan.md`.
 - Add unit tests for prompt/tool validation helpers.
 - Add a safe healthcare handoff prompt example.
