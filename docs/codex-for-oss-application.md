@@ -7,8 +7,8 @@
 - Имя: `<ваше имя>`
 - Фамилия: `<ваша фамилия>`
 - Электронная почта ChatGPT: `<ваш email>`
-- GitHub username: `<ваш GitHub username>`
-- URL репозитория GitHub: `<будет после публикации>`
+- GitHub username: `Varchun87`
+- URL репозитория GitHub: `https://github.com/Varchun87/ai-local-business-assistant`
 - OpenAI Organization ID: `org-Km3ykVC65SSO2piyyJrjelVY`
 
 ## Роль
