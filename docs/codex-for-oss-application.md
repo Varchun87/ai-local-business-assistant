@@ -9,7 +9,7 @@
 - Электронная почта ChatGPT: `<ваш email>`
 - GitHub username: `<ваш GitHub username>`
 - URL репозитория GitHub: `<будет после публикации>`
-- OpenAI Organization ID: `<из https://platform.openai.com/settings/organization/general>`
+- OpenAI Organization ID: `org-Km3ykVC65SSO2piyyJrjelVY`
 
 ## Роль
 
